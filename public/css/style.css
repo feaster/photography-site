@@ -1,0 +1,19 @@
+body {
+    background-color: #F5F5F2;
+}
+
+::selection {
+  background: #969696;
+  color: #F5F5F2;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+    flex-shrink: 0;
+}
