@@ -1,5 +1,5 @@
 module.exports = {
-	title: "Matthew Feaster Photography",
+	title: "Matthew Feaster",
 	url: "https://wondrous-truffle-cd990f.netlify.app/",
 	language: "en",
 	description: "My photography website!",
