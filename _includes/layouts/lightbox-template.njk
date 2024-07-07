@@ -113,17 +113,32 @@ layout: layouts/base.njk
   for (n=0; n<3; n++) {
     const col = document.createElement("div");
     col.classList.add("col-12", "col-md-4");
-    for (i=Math.ceil(n*third); i<Math.ceil((n+1)*third); i++) {
-      const figure = document.createElement("figure");
-      figure.classList.add("mb-2");
-      const link = document.createElement("a");
-      link.classList.add("d-block");
-      link.href = "";
-      const image = images.children[0];
-      image.classList.add("img-fluid");
-      link.appendChild(image);
-      figure.appendChild(link);
-      col.appendChild(figure);
+    if (window.innerWidth<768) {
+      for (i=Math.ceil(n*third); i<Math.ceil((n+1)*third); i++) {
+        const figure = document.createElement("figure");
+        figure.classList.add("mb-2");
+        const link = document.createElement("a");
+        link.classList.add("d-block");
+        link.href = "";
+        const image = images.children[0];
+        image.classList.add("img-fluid");
+        link.appendChild(image);
+        figure.appendChild(link);
+        col.appendChild(figure);
+      };
+    } else {
+      for (i=n; i<total; i+=3) {
+        const figure = document.createElement("figure");
+        figure.classList.add("mb-2");
+        const link = document.createElement("a");
+        link.classList.add("d-block");
+        link.href = "";
+        const image = images.children[i].cloneNode(true);
+        image.classList.add("img-fluid");
+        link.appendChild(image);
+        figure.appendChild(link);
+        col.appendChild(figure);
+      };
     };
     imageGrid.appendChild(col);
   };
