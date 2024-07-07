@@ -5,8 +5,8 @@ layout: layouts/base.njk
   {{content | safe}}
 </div>
 
-  <div class="container-fluid mx-0 px-4 pb-4">
-    <div class="row image-grid">
+  <div class="container-fluid mx-0 px-2 pb-2">
+    <div class="row image-grid g-2">
       
     </div>
   </div>
@@ -115,7 +115,7 @@ layout: layouts/base.njk
     col.classList.add("col-12", "col-md-4");
     for (i=Math.ceil(n*third); i<Math.ceil((n+1)*third); i++) {
       const figure = document.createElement("figure");
-      figure.classList.add("mb-3");
+      figure.classList.add("mb-2");
       const link = document.createElement("a");
       link.classList.add("d-block");
       link.href = "";
