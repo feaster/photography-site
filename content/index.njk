@@ -3,7 +3,22 @@ layout: layouts/base.njk
 title: Home
 ---
 
-<div class="p-5 text-center">
-  <h1 class="text-info">Home</h1>
-  <p class="text-primary">Welcome to my homepage!</p>
+<div id="first-container" class="container-fluid bg-secondary p-5">
+  <p>More content here</p>
 </div>
+
+<style>
+  body {
+    background-image: url("/img/french-alps/Les-Dents-du-Midi-4k.jpg");
+    background-size: 100%;
+	  background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 56px;
+  }
+
+  #first-container {
+    margin-top: 33vw;
+    box-shadow: 0px -5px 5px 0px rgb(73, 74, 72, 0.2);
+  }
+</style>
