@@ -26,6 +26,7 @@ $navbar-light-toggler-border-color:     $info;
 $custom-theme-colors: (
     "accent": #969696,
     "dark-accent": #8B847E,
+    "dark-info": #2D2E2D,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
