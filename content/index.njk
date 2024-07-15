@@ -3,34 +3,70 @@ layout: layouts/base.njk
 title: Home
 ---
 
-<div id="first-container" class="container-fluid bg-secondary p-3 p-md-5">
-  <div class="image-gallery row row-cols-1 row-cols-sm-3 g-3">
-    <div class="col g-3">
-      <img loading="lazy" class="img-fluid mb-3" name="Puffin in flight" src="\img\rspb-bempton-cliffs\Puffin-In-Flight.jpg" alt="Puffin in flight" data-caption="Puffin in flight" width="1080" height="810">
-      <img src="\img\pyrenees\Piau-Engaly-3.jpg" loading="lazy" alt="Bridge over Neste de Badet" data-caption="Bridge over Neste de Badet" width="1080" height="1350" class="img-fluid">
+<div id="first-container" class="image-grid container-fluid bg-secondary p-3 p-md-5">
+  <div class="row g-3">
+    <div class="col-12 col-md-4">
+      <figure class="mb-3">
+        <a class="d-block" href>
+          <img loading="lazy" class="img-fluid" name="Puffin in flight" src="\img\rspb-bempton-cliffs\Puffin-In-Flight.jpg" alt="Puffin in flight" data-caption="Puffin in flight" width="1080" height="810" index="0">
+        </a>
+      </figure>
+      <figure class="mb-3">
+        <a class="d-block" href>
+          <img src="\img\pyrenees\Piau-Engaly-3.jpg" loading="lazy" alt="Bridge over Neste de Badet" data-caption="Bridge over Neste de Badet" width="1080" height="1350" class="img-fluid" index="1">
+        </a>
+      </figure>
     </div>
-    <div class="col g-3">
-      <img src="\img\pyrenees\Lac-de-Gobe.jpg" loading="lazy" alt="Lac de Gobe" data-caption="Lac de Gobe" width="1080" height="1440" class="img-fluid mb-3">
-      <img src="\img\french-alps\Stoat-Running.jpg" loading="lazy" alt="Stoat running in meadow" data-caption="Stoat running in meadow" width="1080" height="720" class="img-fluid">
+    <div class="col-12 col-md-4">
+      <figure class="mb-3">
+        <a class="d-block" href>
+          <img src="\img\pyrenees\Lac-de-Gobe.jpg" loading="lazy" alt="Lac de Gobe" data-caption="Lac de Gobe" width="1080" height="1440" class="img-fluid" index="2">
+        </a>
+      </figure>
+      <figure class="mb-3">
+        <a class="d-block" href>
+          <img src="\img\french-alps\Stoat-Running.jpg" loading="lazy" alt="Stoat running in meadow" data-caption="Stoat running in meadow" width="1080" height="720" class="img-fluid" index="3">
+        </a>
+      </figure>
     </div>
-    <div class="col g-3">
-      <img src="\img\pyrenees\Gave-du-Marcadau-1.jpg" loading="lazy" alt="Gave du Marcadau" data-caption="Gave du Marcadau" width="1080" height="810" class="img-fluid mb-3">
-      <img loading="lazy" src="\img\scotland\Priorsford-Bridge.jpg" alt="Priorsford Bridge, Peebles" data-caption="Priorsford Bridge, Peebles" width="1080" height="1350" class="img-fluid">
+    <div class="col-12 col-md-4">
+      <figure class="mb-3">
+        <a class="d-block" href>
+          <img src="\img\pyrenees\Gave-du-Marcadau-1.jpg" loading="lazy" alt="Gave du Marcadau" data-caption="Gave du Marcadau" width="1080" height="810" class="img-fluid" index="4">
+        </a>
+      </figure>
+      <figure class="mb-3">
+        <a class="d-block" href>
+          <img loading="lazy" src="\img\scotland\Priorsford-Bridge.jpg" alt="Priorsford Bridge, Peebles" data-caption="Priorsford Bridge, Peebles" width="1080" height="1350" class="img-fluid" index="5">
+        </a>
+      </figure>
     </div>
   </div>
   <div class="text-center py-5 d-grid d-sm-block">
     <h2 class="text-center text-info pb-2">Click to see more of my favourite photos</h2>
     <a type="button" href="/gallery/favourites/" class="btn btn-lg btn-primary text-secondary">Favourites</a>
   </div>
-  <div class="image-gallery row row-cols-1 row-cols-sm-3 g-3">
-    <div class="col g-3">
-      <img loading="lazy" src="\img\scotland\Eider-Duck.jpg" alt="Eider duck floating over waves, North Berwick" data-caption="Eider duck floating over waves, North Berwick" width="1080" height="810" class="img-fluid">
+  <div class="row g-3">
+    <div class="col-12 col-md-4">
+      <figure class="mb-3">
+        <a class="d-block" href>
+          <img loading="lazy" src="\img\scotland\Eider-Duck.jpg" alt="Eider duck floating over waves, North Berwick" data-caption="Eider duck floating over waves, North Berwick" width="1080" height="810" class="img-fluid" index="6">
+        </a>
+      </figure>
     </div>
-    <div class="col g-3">
-      <img src="\img\yorkshire-dales\Burnsall.webp" loading="lazy" alt="Burnsall in autum" data-caption="Burnsall" width="1080" height="810" class="img-fluid">
+    <div class="col-12 col-md-4">
+      <figure class="mb-3">
+        <a class="d-block" href>
+          <img src="\img\yorkshire-dales\Burnsall.webp" loading="lazy" alt="Burnsall in autum" data-caption="Burnsall" width="1080" height="810" class="img-fluid" index="7">
+        </a>
+      </figure>
     </div>
-    <div class="col g-3">
-      <img src="/img/north-yorkshire-moors/Lamb-Gate.webp" loading="lazy" alt="Lamb on Round Hill" data-caption="Lamb on Round Hill" width="1080" height="810" class="img-fluid">
+    <div class="col-12 col-md-4">
+      <figure class="mb-3">
+        <a class="d-block" href>
+          <img src="/img/north-yorkshire-moors/Lamb-Gate.webp" loading="lazy" alt="Lamb on Round Hill" data-caption="Lamb on Round Hill" width="1080" height="810" class="img-fluid" index="8">
+        </a>
+      </figure>
     </div>
   </div>
   <div class="text-center pt-5 d-grid d-sm-block">
@@ -50,6 +86,19 @@ title: Home
       Scotland, the French Alps and Pyr&#233;n&#233;es.</p>
   </div>
 </div>
+
+<div class="modal lightbox-modal" id="lightbox-modal" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="container-fluid p-0">
+          <!-- JS content here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>       
 
 <style>
   body {
@@ -91,3 +140,82 @@ title: Home
     }
   }
 </style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+  const imageGrid = document.querySelector(".image-grid");
+  const links = imageGrid.querySelectorAll("a");
+  const imgs = imageGrid.querySelectorAll("img");
+  const lightboxModal = document.getElementById("lightbox-modal");
+  const bsModal = new bootstrap.Modal(lightboxModal);
+  const modalBody = document.querySelector(".modal-body .container-fluid");
+
+  for (const link of links) {
+    if (link.type !== "button") {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const currentImg = link.querySelector("img");
+        const lightboxCarousel = document.getElementById("lightboxCarousel");
+        if (lightboxCarousel) {
+          const index = currentImg.getAttribute("index");
+          const bsCarousel = new bootstrap.Carousel(lightboxCarousel);
+          bsCarousel.to(index);
+        } else {
+          createCarousel(currentImg);
+        }
+        bsModal.show();
+      });
+    };
+  }
+
+  function createCarousel(img) {
+    const markup = `
+      <div id="lightboxCarousel" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          ${createSlides(img)}
+        </div> 
+        <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      `;
+
+    modalBody.innerHTML = markup;
+  }
+
+  function createSlides(img) {
+    let markup = "";
+    const currentImgSrc = img.getAttribute("src");
+
+    for (const img of imgs) {
+      const imgSrc = img.getAttribute("src");
+      const imgAlt = img.getAttribute("alt");
+      const imgCaption = img.getAttribute("data-caption");
+      const imgName = img.getAttribute("name");
+
+      if (imgSrc) {
+        markup += `
+        <div class="carousel-item${currentImgSrc === imgSrc ? " active" : ""}">
+          <img src=${imgSrc} alt=${imgAlt}>
+          ${imgCaption ? createCaption(imgCaption) : ""}
+        </div>
+        `;
+      };
+    }
+
+    return markup;
+  }
+
+  function createCaption(caption) {
+    return `<div class="carousel-caption">
+      <p class="m-0">${caption}</p>
+      </div>`;
+  }
+
+</script>
