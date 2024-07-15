@@ -3,30 +3,39 @@ layout: layouts/base.njk
 title: Home
 ---
 
-<div id="first-container" class="container-fluid bg-secondary p-3 p-md-5 flex-row d-md-flex align-items-center">
-  <div class="col-12 col-md-6 text-center">
-    <div id="favouritesCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"  data-bs-touch="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="6000">
-          <img src="/img/rspb-bempton-cliffs/Puffin-In-Flight.jpg" class="d-block w-100 rounded" alt="Puffin in flight, RSPB Bempton Cliffs">
-        </div>
-        <div class="carousel-item" data-bs-interval="6000">
-          <img src="/img/pyrenees/Gave-du-Marcadau-1.jpg" class="d-block w-100 rounded" alt="Gave du Marcadau, Pyr&#233;n&#233;es">
-        </div>
-        <div class="carousel-item" data-bs-interval="6000">
-          <img src="/img/vale-of-york/Tawny-Owl-Gravestone.jpg" class="d-block w-100 rounded" alt="Tawny owl on a gravestone">
-        </div>
-        <div class="carousel-item" data-bs-interval="6000">
-          <img src="/img/scotland/Eider-Duck.jpg" class="d-block w-100 rounded" alt="Eider duck floating on waves, North Berwick">
-        </div>
-      </div>
+<div id="first-container" class="container-fluid bg-secondary p-3 p-md-5">
+  <div class="image-gallery row row-cols-1 row-cols-sm-3 g-3">
+    <div class="col g-3">
+      <img loading="lazy" class="img-fluid mb-3" name="Puffin in flight" src="\img\rspb-bempton-cliffs\Puffin-In-Flight.jpg" alt="Puffin in flight" data-caption="Puffin in flight" width="1080" height="810">
+      <img src="\img\pyrenees\Piau-Engaly-3.jpg" loading="lazy" alt="Bridge over Neste de Badet" data-caption="Bridge over Neste de Badet" width="1080" height="1350" class="img-fluid">
+    </div>
+    <div class="col g-3">
+      <img src="\img\pyrenees\Lac-de-Gobe.jpg" loading="lazy" alt="Lac de Gobe" data-caption="Lac de Gobe" width="1080" height="1440" class="img-fluid mb-3">
+      <img src="\img\french-alps\Stoat-Running.jpg" loading="lazy" alt="Stoat running in meadow" data-caption="Stoat running in meadow" width="1080" height="720" class="img-fluid">
+    </div>
+    <div class="col g-3">
+      <img src="\img\pyrenees\Gave-du-Marcadau-1.jpg" loading="lazy" alt="Gave du Marcadau" data-caption="Gave du Marcadau" width="1080" height="810" class="img-fluid mb-3">
+      <img loading="lazy" src="\img\scotland\Priorsford-Bridge.jpg" alt="Priorsford Bridge, Peebles" data-caption="Priorsford Bridge, Peebles" width="1080" height="1350" class="img-fluid">
     </div>
   </div>
-  <div class="col-12 col-md-6 px-md-5 pt-3 pt-md-0 text-center">
-    <h2 class="text-center text-info">Click to see some of my favourite photos</h2>
-    <a href="/gallery/favourites/">
-      <button type="button" class="btn btn-lg btn-primary text-secondary">See More</button>
-    </a>
+  <div class="text-center py-5 d-grid d-sm-block">
+    <h2 class="text-center text-info pb-2">Click to see more of my favourite photos</h2>
+    <a type="button" href="/gallery/favourites/" class="btn btn-lg btn-primary text-secondary">Favourites</a>
+  </div>
+  <div class="image-gallery row row-cols-1 row-cols-sm-3 g-3">
+    <div class="col g-3">
+      <img loading="lazy" src="\img\scotland\Eider-Duck.jpg" alt="Eider duck floating over waves, North Berwick" data-caption="Eider duck floating over waves, North Berwick" width="1080" height="810" class="img-fluid">
+    </div>
+    <div class="col g-3">
+      <img src="\img\yorkshire-dales\Burnsall.webp" loading="lazy" alt="Burnsall in autum" data-caption="Burnsall" width="1080" height="810" class="img-fluid">
+    </div>
+    <div class="col g-3">
+      <img src="/img/north-yorkshire-moors/Lamb-Gate.webp" loading="lazy" alt="Lamb on Round Hill" data-caption="Lamb on Round Hill" width="1080" height="810" class="img-fluid">
+    </div>
+  </div>
+  <div class="text-center pt-5 d-grid d-sm-block">
+    <h3 class="text-center text-info pb-2">... or check out the gallery to see even more!</h3>
+    <a type="button" href="/gallery/" class="btn btn-lg btn-primary text-secondary">Gallery</a>
   </div>
 </div>
 
