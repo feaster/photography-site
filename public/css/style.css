@@ -1,10 +1,15 @@
+:root {
+    --secondary: #F5F5F2;
+    --accent: #969696;
+}
+
 body {
-    background-color: #F5F5F2;
+    background-color: var(--secondary);
 }
 
 ::selection {
-  background: #969696;
-  color: #F5F5F2;
+  background: var(--accent);
+  color: var(--secondary);
 }
 
 html, body {
